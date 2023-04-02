@@ -1,13 +1,21 @@
 import PropTypes from 'prop-types';
-import { Marker } from './Statistics.styled';
+import { StatisticsWrapper, Marker } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    <>
-      <Marker>Good: {good}</Marker>
-      <Marker>Neutral: {neutral}</Marker>
-      <Marker>Bad: {bad}</Marker>
-      <Marker>Total: {total}</Marker>
+    <StatisticsWrapper>
+      <Marker>
+        Good: <span>{good}</span>
+      </Marker>
+      <Marker>
+        Neutral: <span>{neutral}</span>
+      </Marker>
+      <Marker>
+        Bad: <span>{bad}</span>
+      </Marker>
+      <Marker>
+        Total: <span>{total}</span>
+      </Marker>
       <Marker>
         Positive percentage:
         <span
@@ -18,7 +26,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
           {` ${positivePercentage}%`}
         </span>
       </Marker>
-    </>
+    </StatisticsWrapper>
   );
 };
 

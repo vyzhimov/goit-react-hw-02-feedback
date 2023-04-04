@@ -19,7 +19,7 @@ export const Button = styled.button`
   transition: scale 200ms ease-in;
 
   &:nth-of-type(1) {
-    background-color: darkgreen;
+    background-color: mediumseagreen;
   }
 
   &:nth-of-type(2) {

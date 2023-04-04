@@ -6,7 +6,8 @@ export const StatisticsWrapper = styled.ul`
   align-items: center;
   gap: 20px;
   list-style: none;
-  margin: 0 auto;
+  padding: 0;
+  margin: 30px auto;
 `;
 
 export const Marker = styled.li`
